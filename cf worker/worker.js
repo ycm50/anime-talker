@@ -1162,7 +1162,7 @@ const FRONTEND_HTML = `<!DOCTYPE html>
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ baseUrl: baseUrl, apiKey: apiKey, model: model, worldBook: worldBook, jailbreakPrompt: jailbreakPrompt })
         }).then(function(r){ return r.json(); }).then(function(data){
-            if(data.success){ state.aiConfigured = !!(baseUrl && model); showAIStatus('✅ 已保存，立即生效', 'ok'); setTimeout(hideAIStatus, 2000); }
+            if(data.success){ state.aiConfigured = !!(baseUrl && model); showAIStatus('✅ 已保存，立即生效', 'ok'); setTimeout(hideAIStatus, 2000); if(window.innerWidth<=768){ dom.sidebar.classList.remove('mobile-show'); dom.aiBody.classList.remove('open'); dom.aiToggleIcon.classList.remove('open'); } }
             else { showAIStatus('❌ ' + (data.error || '保存失败'), 'err'); }
         }).catch(function(err){ showAIStatus('❌ ' + err.message, 'err'); });
     }

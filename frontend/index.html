@@ -528,6 +528,8 @@
                 state.aiConfigured = !!(baseUrl && model);
                 showAIStatus('\u2705 \u5df2\u4fdd\u5b58\uff0c\u7acb\u5373\u751f\u6548', 'ok');
                 setTimeout(hideAIStatus, 2000);
+                // 手机端保存后自动关闭侧边栏
+                if(window.innerWidth<=768){ dom.sidebar.classList.remove('mobile-show'); dom.aiBody.classList.remove('open'); dom.aiToggleIcon.classList.remove('open'); }
             } else {
                 showAIStatus('\u274c ' + (data.error || '\u4fdd\u5b58\u5931\u8d25'), 'err');
             }
