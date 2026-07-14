@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 酒馆深色主题 -->
+    <style name="Theme.酒馆" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#e94560</item>
+        <item name="colorPrimaryVariant">#c23152</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorSecondary">#0f3460</item>
+        <item name="colorSecondaryVariant">#16213e</item>
+        <item name="colorOnSecondary">#ffffff</item>
+        <item name="colorSurface">#1a1a2e</item>
+        <item name="colorOnSurface">#e0e0e0</item>
+        <item name="android:statusBarColor">#0f3460</item>
+        <item name="android:navigationBarColor">#16213e</item>
+        <item name="android:windowBackground">#1a1a2e</item>
+    </style>
+</resources>

@@ -1,0 +1,56 @@
+# =====================
+# Node.js
+# =====================
+node_modules/
+backend/node_modules/
+npm-debug.log*
+
+# =====================
+# Python
+# =====================
+*.pyc
+__pycache__/
+env/
+
+# =====================
+# Android 构建产物
+# =====================
+frontend/android/.gradle/
+frontend/android/local.properties
+frontend/android/build/
+frontend/android/app/build/
+frontend/android/.cxx/
+frontend/android/captures/
+frontend/android/.externalNativeBuild/
+*.apk
+*.aab
+*.ap_
+*.dex
+local.properties
+*.iml
+.idea/
+*.hprof
+
+# =====================
+# 敏感 / 运行期数据
+# =====================
+backend/settings.json
+backend/messages.json
+.env
+
+# =====================
+# IDE / 系统
+# =====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================
+# 项目工具
+# =====================
+.reasonix/

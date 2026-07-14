@@ -1,0 +1,14 @@
+{
+  "name": "jiuguan-server",
+  "version": "1.0.0",
+  "description": "酒馆 - 局域网聊天服务器",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build:cpp": "cd cpp && g++ -O2 -std=c++17 -o message_processor.exe message_processor.cpp"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.16.0"
+  }
+}
